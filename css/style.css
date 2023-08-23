@@ -1,38 +1,4 @@
-/*-------------------- Min-Null Style File---------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
-*,
-*::before,
-*::after {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  vertical-align: top;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: inherit;
-}
-
-html,
-body {
-  height: 100%;
-  line-height: 1;
-}
-
 /*--------- common page styles ---------*/
 body {
   font-family: "Montserrat";
@@ -221,11 +187,4 @@ body {
 }
 .education__title {
   margin: 0 0 8px 0;
-}
-/*--------- pc -----------*/
-@media (max-width: 1400px) {
-  body {
-    font-size: 12px;
-    background: rgb(167, 224, 167);
-  }
 }

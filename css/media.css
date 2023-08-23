@@ -1,0 +1,7 @@
+/*--------- pc -----------*/
+@media (max-width: 1400px) {
+  body {
+    font-size: 12px;
+    background: rgb(120, 122, 236);
+  }
+}
