@@ -1,7 +1,49 @@
 /*--------- pc -----------*/
 @media (max-width: 1400px) {
   body {
-    font-size: 12px;
-    background: rgb(120, 122, 236);
+    font-size: 13px;
+  }
+  [class*=__container] {
+    max-width: 980px;
+    padding: 0 30px;
+  }
+  .header-section {
+    font-size: 20px;
+  }
+  .aside {
+    flex: 0 1 36%;
+  }
+  .aside__body {
+    max-width: 350px;
+  }
+  .aside__info {
+    padding: 30px 0 0 30px;
+  }
+  .items-info__item:not(:last-child) {
+    margin: 0 0 30px 0;
+  }
+  .item-info__header {
+    margin: 0 0 5px 0;
+  }
+  .main {
+    flex: 0 1 64%;
+  }
+  .main__body {
+    padding: 100px 0 0 100px;
+  }
+  .main__about {
+    margin: 0 0 30px 0;
+  }
+  .main__projects {
+    margin: 0 0 30px 0;
+  }
+  .main__experience {
+    margin: 0 0 30px 0;
+  }
+  .about__header {
+    margin: 0 0 20px 0;
+  }
+  .projects__header {
+    margin: 0 0 5px 0;
   }
 }
