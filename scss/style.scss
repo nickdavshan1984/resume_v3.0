@@ -50,6 +50,9 @@ $list-left: 0 0 0 18px;
 	}
 
 	&__photo {
+		img {
+			max-width: 100%;
+		}
 	}
 
 	&__info {
@@ -254,5 +257,13 @@ $list-left: 0 0 0 18px;
 	}
 
 	&__timeplace {
+	}
+}
+
+/*--------- pc -----------*/
+@media (max-width: 1400px) {
+	body {
+		font-size: 12px;
+		background: rgb(167, 224, 167);
 	}
 }

@@ -81,6 +81,9 @@ body {
   background: rgb(30, 41, 57);
   color: #fff;
 }
+.aside__photo img {
+  max-width: 100%;
+}
 .aside__info {
   padding: 50px 0 0 40px;
 }
@@ -218,4 +221,11 @@ body {
 }
 .education__title {
   margin: 0 0 8px 0;
+}
+/*--------- pc -----------*/
+@media (max-width: 1400px) {
+  body {
+    font-size: 12px;
+    background: rgb(167, 224, 167);
+  }
 }
