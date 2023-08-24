@@ -1,4 +1,4 @@
-//@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+/*------------- add fonts ------------*/
 @font-face {
 	font-family: 'MontserratRegular';
 	src: url('../fonts/MontserratRegular.woff2'),
@@ -276,3 +276,19 @@ $list-left: 0 0 0 18px;
 	}
 }
 
+/*----------- burger-menu ----------*/
+.aside {
+	&__burger {
+		margin:  0 0 0 93%;
+	}
+}
+
+.burger {
+	width: 30px;
+	height: 30px;
+}
+
+.icon-menu-close,
+.icon-menu {
+	display: none;
+}

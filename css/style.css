@@ -1,3 +1,4 @@
+/*------------- add fonts ------------*/
 @font-face {
   font-family: "MontserratRegular";
   src: url("../fonts/MontserratRegular.woff2"), url("../fonts/MontserratRegular.woff");
@@ -200,4 +201,18 @@ body {
 }
 .education__title {
   margin: 0 0 8px 0;
+}
+/*----------- burger-menu ----------*/
+.aside__burger {
+  margin: 0 0 0 93%;
+}
+
+.burger {
+  width: 30px;
+  height: 30px;
+}
+
+.icon-menu-close,
+.icon-menu {
+  display: none;
 }

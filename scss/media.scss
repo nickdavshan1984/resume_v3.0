@@ -105,11 +105,176 @@
 }
 /* ---------- tablet ----------- */
 @media (max-width: 991.98px) {
+	[class*=__container] {
+		max-width: none;
+		padding: 0;
+	}
 
+	.main {
+		&__body {
+			padding: 40px 20px 40px 20px;
+		}
+	}
+
+}
+@media (max-width: 850px) {
+	body {
+		font-size: 12px;
+	}
+
+	.header-page {
+		font-size: 40px;
+	}
+
+	.header-section {
+		font-size: 18px;
+	}
+
+	.main {
+		&__about {
+			margin: 0 0 20px 0;
+		}
+		
+		&__experience {
+			margin: 0 0 20px 0;
+		}
+	}
+	
+	.title-main {
+		font-size: 14px;
+	}
+	
+	.timeplace {
+		font-size: 10px;
+	}
+	
+	.aside {
+		&__info {
+			padding: 35px 0 0 40px;
+		}
+
+		&__title {
+			margin: 0 0 10px 0;
+		}
+	}
+
+	.items-info {
+		&__item:not(:last-child) {
+			margin: 0 60px 0 0;
+	  }
+	}
+
+	.about {
+		&__header {
+			margin: 0 0 10px 0;
+		}
+	}
+
+	.projects {
+		&__list {
+			padding: 0 0 0 14px;
+		}
+	}
+	
+	.experience {
+		&__header {
+			margin: 0 0 5px 0;
+		}
+	}
+
+	.education {
+		&__header {
+			margin: 0 0 5px 0;
+		}
+	}
+}
+	
+@media (max-width: 800px) {
+	body {
+		font-size: 11px;
+	}
 }
 /* ---------- mobile ----------- */
 @media (max-width: 767.98px) {
+	.aside {
+		&__body {
+			position: fixed;
+			top: 0;
+			left: -100%;
+			width: 100%;
+			height: 100%;
+			flex-wrap: wrap;
+			transition: all 0.3s ease 0s;
+			overflow: auto;
+		}
+		
+		&:target  &__body{
+			 left: 0;
+		} 
 
+		&:target .icon-menu{
+			display: none;
+		}
+
+		&:target .icon-menu-close {
+			display: flex;
+		}
+		
+		&__photo img {
+			width: 100%;
+		}
+	}
+
+	.photo {
+		flex: 0 1 100%;
+	}
+
+	.items-info {
+		display: block;
+	}
+
+	.icon-menu {
+		display: flex;
+		position: relative;
+		height: 18px;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 15px 0 0 0;
+		&::before, 
+		&::after {
+			content: '';
+			background-color: #000;
+			height: 2px;
+		}
+		span {
+			height: 2px;
+			background-color: #000;
+		}
+	}
+
+	.icon-menu-close {
+		display: none;
+		position: relative;
+		margin: 22px 0 0 0;
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 100%;
+			background: rgb(212, 94, 51);;
+			height: 2px;
+		}
+
+		&::before {
+			transform: rotate(45deg);
+		}
+
+		&::after {
+			transform: rotate(-45deg);
+		}
+	}
 }
 
 /* ---------- mobile small ----------- */
