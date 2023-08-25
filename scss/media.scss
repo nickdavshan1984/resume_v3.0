@@ -207,7 +207,7 @@
 	
 	.aside {
 		&__body {
-			position: fixed;
+			position: absolute;
 			top: 0;
 			left: -100%;
 			width: 100%;
@@ -221,11 +221,11 @@
 			 left: 0;
 		} 
 
-		&:target .burger-open{
+		&:target .link-open{
 			display: none;
 		}
 
-		&:target .burger-close {
+		&:target .link-close {
 			display: flex;
 		}
 		
@@ -249,7 +249,7 @@
 		}
 	}
 
-	.burger-open {
+	.link-open {
 		display: flex;
 		position: relative;
 		height: 18px;
@@ -261,24 +261,26 @@
 			content: '';
 			background-color: #000;
 			height: 2px;
+			max-width: 100%;
 		}
 		span {
+			max-width: 100%;
 			height: 2px;
 			background-color: #000;
 		}
 	}
 
-	.burger-close {
+	.link-close {
 		display: none;
 		position: relative;
 		margin: 22px 0 0 0;
 		&::before,
 		&::after {
 			content: '';
-			position: absolute;
-			top: 50%;
-			left: 0;
-			width: 100%;
+			position: fixed;
+			top: 4%;
+			left: 89%;
+			width: 4%;
 			background: rgb(212, 94, 51);;
 			height: 2px;
 		}
@@ -291,6 +293,7 @@
 			transform: rotate(-45deg);
 		}
 	}
+	
 }
 
 /* ---------- mobile small ----------- */

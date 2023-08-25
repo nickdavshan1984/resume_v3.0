@@ -208,11 +208,12 @@ body {
 }
 
 .burger {
+  display: inline-block;
   width: 30px;
   height: 30px;
 }
 
-.icon-menu-close,
-.icon-menu {
+.link-open,
+.link-close {
   display: none;
 }
