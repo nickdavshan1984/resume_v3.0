@@ -144,6 +144,10 @@
   body {
     font-size: 14px;
   }
+  [class*=__container] {
+    max-width: 750px;
+    padding: 0 15px;
+  }
   .aside__body {
     position: fixed;
     top: 0;

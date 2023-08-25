@@ -200,6 +200,11 @@
 		font-size: 14px;
 	}
 	
+	[class*=__container] {
+		max-width: 750px;
+		padding: 0 15px;
+	}
+	
 	.aside {
 		&__body {
 			position: fixed;
