@@ -277,10 +277,10 @@
 		&::before,
 		&::after {
 			content: '';
-			position: fixed;
-			top: 4%;
-			left: 89%;
-			width: 4%;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 30px;
 			background: rgb(212, 94, 51);;
 			height: 2px;
 		}
